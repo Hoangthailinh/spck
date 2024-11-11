@@ -1,0 +1,107 @@
+.top-albums-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-titlee {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-titlee .highlight {
+  color: #007bff; /* Màu nổi bật cho chữ "Albums" */
+}
+
+.albums-list {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.album-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  height: 310px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.album-item:hover {
+  transform: scale(1.05);
+}
+
+.album-cover {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.album-info {
+  margin-top: 10px;
+}
+
+.album-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.album-artist {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Biểu tượng trạng thái ở góc dưới bên phải */
+.status-indicator {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #007bff; /* Màu viền */
+  border-radius: 50%;
+  background-color: #1e1e1e; /* Màu nền bên trong */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.status-indicator::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background-color: #007bff; /* Màu xanh bên trong */
+  border-radius: 50%;
+}
+
+/* Style cho phần View All */
+.view-all {
+  background-color: #333;
+  padding: 15px;
+  border-radius: 50%;
+  text-align: center;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.view-all:hover {
+  transform: scale(1.1);
+}
+
+.view-all-icon {
+  font-size: 2em;
+  color: white;
+}

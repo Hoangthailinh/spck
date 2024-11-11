@@ -1,0 +1,57 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+  font-size: 18px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.search-icon {
+  color: #aaa; /* Màu icon */
+  margin-right: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-links a {
+  margin-right: 70px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+  margin-left: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.login-btn {
+  background-color: #222;
+  color: #ee10b0;
+}
+
+.signup-btn {
+  background-color: #ee10b0;
+  color: black;
+}
