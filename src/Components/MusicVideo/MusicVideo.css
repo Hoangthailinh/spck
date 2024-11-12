@@ -1,0 +1,96 @@
+.music-video-container {
+  padding: 20px;
+  color: #fff;
+}
+
+.section-title {
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.section-title .highlight {
+  color: #ee10b0;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+}
+
+.music-video-list {
+  display: flex;
+  gap: 15px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.video-item {
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  width: 100%;
+  width: 490px; /* Giới hạn chiều rộng cho mỗi video */
+  height: 300px;
+  text-align: center;
+  position: relative;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.video-item:hover {
+  transform: scale(1.05);
+}
+
+.video-cover {
+  width: 100%;
+  height: 220px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.video-info {
+  margin-top: 10px;
+}
+
+.video-title {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+
+.video-artist,
+.video-views {
+  font-size: 0.8em;
+  color: #aaa;
+}
+
+/* Nút điều hướng */
+.prev-button,
+.next-button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 50%;
+  transition: background-color 0.3s, opacity 0.3s ease;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+/* Hiệu ứng hover */
+.prev-button:hover,
+.next-button:hover {
+  background-color: #ee10b0;
+}
+
+/* Ẩn nút khi bị vô hiệu hóa */
+.prev-button:disabled,
+.next-button:disabled {
+  display: none; /* Ẩn hoàn toàn nút khỏi giao diện */
+}
