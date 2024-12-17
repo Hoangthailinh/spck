@@ -1,0 +1,98 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444;
+  font-size: 18px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #333;
+  border-radius: 10px;
+  padding: 5px 10px;
+  width: 50%;
+}
+
+.search-icon {
+  color: #aaa; /* Màu icon */
+  margin-right: 10px;
+}
+
+.search-bar {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các liên kết và avatar */
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.login-btn,
+.signup-btn {
+  margin-left: 10px;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 115px;
+}
+
+.login-btn {
+  background-color: #222;
+  color: #ee10b0;
+}
+
+.signup-btn {
+  background-color: #ee10b0;
+  color: black;
+}
+
+/* Nút Login và Sign Up */
+.auth-buttons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.auth-button {
+  background-color: #ee10b0;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.auth-button:hover {
+  background-color: #00aaff;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ee10b0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5em;
+  color: white;
+  font-weight: bold;
+}
