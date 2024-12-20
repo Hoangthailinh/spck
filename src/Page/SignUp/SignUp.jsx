@@ -22,6 +22,7 @@ function SignUp() {
     password: "admin",
     role: "admin",
     id: "admin",
+    premium: "Pro",
   };
   // check key trong local
   if (localStorage.getItem("list_User") === null) {
@@ -80,6 +81,10 @@ function SignUp() {
     let checkNum = false;
     let checkSpecialChars = false;
 
+    if (password.length < 8) {
+      return setMessage("Password must be at least 8 character.");
+    }
+
     for (let i = 0; i < password.length; i++) {
       if (uppercaseLetters.includes(password[i])) {
         checkUpperCase = true;
@@ -116,6 +121,9 @@ function SignUp() {
       password: password,
       role: role,
       id: new Date(),
+      premium: "Member",
+      end_premium: "unlimited",
+      album: [],
     };
     setListUser([...list_User, newUser]);
     localStorage.setItem("list_User", JSON.stringify([...list_User, newUser]));

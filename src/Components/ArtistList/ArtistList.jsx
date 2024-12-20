@@ -8,32 +8,19 @@ const artists = [
   { name: "Imagine Dragons", image: "./69824 3.png" },
   { name: "Adele", image: "./69824 4.png" },
   { name: "Lana Del Ray", image: "./69824 5.png" },
-  { name: "Eminiem", image: "./69824 2.png" },
-  { name: "Imagine Dragons", image: "./69824 3.png" },
-  { name: "Adele", image: "./69824 4.png" },
   { name: "Harry Styles", image: "./69824 6.png" },
   { name: "Billie Eilish", image: "./69824 7.png" },
-  { name: "Billie Eilish", image: "./69824 7.png" },
-  { name: "Adele", image: "./69824 4.png" },
-  { name: "Harry Styles", image: "./69824 6.png" },
-  { name: "Lana Del Ray", image: "./69824 5.png" },
-  { name: "Imagine Dragons", image: "./69824 3.png" },
-  { name: "Harry Styles", image: "./69824 6.png" },
-  { name: "Harry Styles", image: "./69824 6.png" },
-  { name: "Billie Eilish", image: "./69824 7.png" },
-  { name: "Lana Del Ray", image: "./69824 5.png" },
-  { name: "Lana Del Ray", image: "./69824 5.png" },
-  { name: "Eminiem", image: "./69824 2.png" },
-  { name: "Imagine Dragons", image: "./69824 3.png" },
-  { name: "Adele", image: "./69824 4.png" },
-  { name: "Eminiem", image: "./69824 2.png" },
-  { name: "Billie Eilish", image: "./69824 7.png" },
+  { name: "Taylor Swift", image: "./69824 3.png" },
+  { name: "Ed Sheeran", image: "./69824 5.png" },
+  { name: "Drake", image: "./69824 4.png" },
+  { name: "Rihanna", image: "./69824 6.png" },
+  { name: "Bruno Mars", image: "./69824 2.png" },
+  { name: "The Weeknd", image: "./69824 7.png" },
 ];
 
 export default function ArtistList() {
   const [displayArtist, setDisplayArtist] = useState(false);
   const displayArtistInfo = () => {
-    console.log(displayArtist);
     displayArtist ? setDisplayArtist(false) : setDisplayArtist(true);
   };
   return (

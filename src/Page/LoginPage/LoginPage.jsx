@@ -16,6 +16,7 @@ function LoginPage() {
     password: "admin",
     role: "admin",
     id: "admin",
+    premium: "Pro",
   };
   // check key trong local
   if (localStorage.getItem("list_User") === null) {
@@ -29,6 +30,7 @@ function LoginPage() {
       if (list_User[i].username === username && list_User[i].password === password) {
         setRole(list_User[i].role);
         localStorage.setItem("role", list_User[i].role);
+        localStorage.setItem("userID", list_User[i].id);
         localStorage.setItem("loginStatus", true);
         navigate("/");
       }

@@ -40,7 +40,7 @@ function Header() {
       <div className="nav-links">
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
-        <a href="#premium">Premium</a>
+        <NavLink to="/premium">Premium</NavLink>
         {loginStatus ? (
           <div className="avatar">
             <i className="fa-solid fa-circle-user" style={{ cursor: "pointer" }}></i>

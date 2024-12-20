@@ -10,7 +10,7 @@ export default function Setting() {
   // danh sách Artist và chỉnh sửa thông tin artist
   const [list_Artist, setList_Artist] = useState(list_User.filter((item) => item.role === "artist"));
 
-  const [list_Listener, setList_Listener] = useState(list_User.filter(item => item.role === 'listener'));
+  const [list_Listener, setList_Listener] = useState(list_User.filter((item) => item.role === "listener"));
   const deleteArtist = (id) => {
     const newList_User = list_User.filter((item) => item.id !== id);
     console.log(newList_User);
@@ -79,8 +79,8 @@ export default function Setting() {
     localStorage.setItem("list_User", JSON.stringify([...list_User]));
     setList_Artist([...list_User, new_artist].filter((item) => item.role === "artist"));
   };
-  
-  // xóa listener 
+
+  // xóa listener
   const deleteListener = (id) => {
     const newList_User = list_User.filter((item) => item.id !== id);
     console.log(newList_User);
@@ -94,7 +94,7 @@ export default function Setting() {
   const [newListenerRole, setRoleListener] = useState("");
   const [newListenerUsername, setUsernameListener] = useState("");
   const [newListenerPassword, setPasswordListener] = useState("");
-const addListener = (e) => {
+  const addListener = (e) => {
     e.preventDefault();
     const new_Listener = {
       username: newListenerUsername,
@@ -115,12 +115,12 @@ const addListener = (e) => {
 
   const showManageListener = () => {
     displayManageListener ? setDisplayListener(false) : setDisplayListener(true);
-  }
+  };
   return (
     <div className="manage_container">
       {getRole === "admin" ? (
         <div>
-        {/* ========= MANAGE ARTIST ============ */}
+          {/* ========= MANAGE ARTIST ============ */}
           <div className="d-flex gap-3 align-items-center header-manage" onClick={() => showManageArtist()}>
             <h2 style={{ marginBottom: 0 }}>Artist Manage</h2>
             <i className="fa-solid fa-chevron-down"></i>

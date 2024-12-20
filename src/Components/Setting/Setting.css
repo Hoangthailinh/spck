@@ -1,33 +1,32 @@
 .manage_container {
-    padding-top: 20px;
-
+  padding-top: 20px;
+  width: 81vw;
 }
 .header-manage {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .listArtistManaged {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 table {
-    width: 90%;
-    border-collapse: collapse;
-    margin: 10px 0;
+  width: 90%;
+  border-collapse: collapse;
+  margin: 10px 0;
 }
 
 .artist_info {
-    background-color: transparent;
-    border:none;
-    color: white;
-    outline: none;
+  background-color: transparent;
+  border: none;
+  color: white;
+  outline: none;
 }
 
 .add_artist_button {
-    padding: 10px 20px;
-    border-radius: 10px;
-    background-color: #ee10b0;
-    border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: #ee10b0;
+  border: none;
 }

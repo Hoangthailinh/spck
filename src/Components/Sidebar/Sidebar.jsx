@@ -9,6 +9,7 @@ function Sidebar() {
   const handleLogout = () => {
     localStorage.setItem("loginStatus", false);
     localStorage.setItem('role', '');
+    localStorage.setItem('userID', '');
     window.location.reload();
   };
 
