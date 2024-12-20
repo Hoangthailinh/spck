@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import "./LoginPage.css";
 
@@ -56,6 +56,21 @@ function LoginPage() {
   const directToGoogle = () => {
     navigate("/error");
   };
+
+  useEffect(() => {
+    let new_list = list_User;
+    let now = new Date();
+    now = now.toLocaleDateString();
+    for (let i = 0; i < new_list.length; i++) {
+      if (new_list[i].end_premium === now) {
+        new_list[i].premium = "Member";
+        new_list[i].end_premium = "unlimited";
+      }
+    }
+    setListUser(new_list);
+    localStorage.setItem("list_User", JSON.stringify(new_list));
+  }, []);
+
   return (
     <div className="login-page">
       <div className="login-container">
